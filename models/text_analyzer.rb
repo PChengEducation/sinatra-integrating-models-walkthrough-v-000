@@ -2,20 +2,20 @@ class TextAnalyzer
   attr_accessor :text
 
   def initialize(text)
-    @text = text 
+    @text = text
   end
 
   def count_of_words
     words = @text.split(" ")
-    words.count 
+    words.count
   end
 
   def count_of_vowels
-    @text.scan(/[aeiou]/).count 
+    @text.scan(/[aeiou]/).count
   end
 
-  def count_of_consonants 
-    @text.scan(/[bcdfghjklmnpqrstvwxyz]/).count 
+  def count_of_consonants
+    @text.scan(/[bcdfghjklmnpqrstvwxyz]/).count
   end
 
   def most_used_letter
@@ -36,7 +36,7 @@ class TextAnalyzer
           :most_used_letter => " ",
           :letter_count => " "
         }
-        biggest[:most_used_letter] = key 
+        biggest[:most_used_letter] = key
         biggest[:letter_count] = value
       end
     end
